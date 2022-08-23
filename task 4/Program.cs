@@ -1,0 +1,23 @@
+﻿
+double[] array = new double[5];
+Random rand = new Random();
+double res = 0;
+double max = array[0];
+double min = array[0];
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = rand.Next(-10,11);
+    if (array[i] > max)
+    {
+        max = array[i];
+    }
+    if(array[i] < min)
+    {
+        min = array[i];
+    }
+ }
+  res = max - min;
+   Console.Write(string.Join(", ",array));
+   Console.WriteLine($"  ->  {res}");
+
+
