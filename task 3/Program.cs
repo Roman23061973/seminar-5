@@ -2,7 +2,7 @@
 int[] array = new int[10];
 Random rand = new Random();
 int sum = 0;
-for (int i= 0; i <= array.Length; i++)
+for (int i= 0; i < array.Length; i++)
 
 {
     array[i] = rand.Next(-10, 11);
